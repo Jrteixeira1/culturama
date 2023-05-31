@@ -1,3 +1,4 @@
+/* Display Mobille */
 .menu {
     display: flex;
     justify-content: space-evenly;
@@ -6,12 +7,74 @@
     column-gap: 33px;
 }
 
+.categorias__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.destaques {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.destaques__barra {
+    flex-grow: 1;
+}
+
+.eventos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.eventos__item {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.agenda__item {
+    display: grid;
+}
+.agenda__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.agenda__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+}
+
+.rodape__logo {
+    align-self: end;
+}
+/* Display Tablet */
 @media (min-width: 720px) {
      .menu {
         column-gap: 75px;
      }
+
+     .categorias__lista {
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+     }
+     .eventos__lista {
+        justify-content: end;
+     }
 }
 
+/* Display Desktop */
 @media (min-width: 1440px) {
     .menu {
         column-gap: 105px;
